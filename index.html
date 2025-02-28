@@ -4,12 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A5-Dev-Board</title>
+    <!-- Poppins Google Font CDN Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Tailwind & DaisyUI CDN Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-    
+<body class="bg-[#F4F7FF] min-h-screen font-[poppins]">
+    <section class="container mx-auto py-6 ">
+        <!-- Header Section -->
+        <header class="flex items-center justify-between bg-white p-6 rounded-2xl mb-4">
+            <button class="flex items-center space-x-2">
+                <img class="w-12 h-12" src="./assets/logo.png" alt="Logo">
+                <p class="text-4xl">Dev<span class="font-bold">Board</span></p>
+            </button>
+            <div class="flex items-center space-x-8">
+                <div class="flex items-center space-x-2 rounded-[32px] bg-[#F4F7FF]">
+                    <i class="fa-solid fa-square-check text-3xl text-[#3752FD]"></i>
+                    <p class="text-3xl font-bold">23</p>
+                </div>
+                <div>
+                    <button><img src="./assets/theme-btn.png" alt=""></button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Section -->
+
+        <main>
+            <section class="flex items-center gap-6 justify-between">
+                <div class="w-9/12 bg-white">
+                    <div class="p-6 flex justify-between items-center gap-3 mb-16">
+                        <!-- Task Assigned Section -->
+                     <div class="flex items-center gap-6 pr-16 p-3 bg-[#F4F7FF] rounded-lg h-32">
+                        <img class="p-5 rounded-full bg-white" src="./assets/checkbox.png" alt="">
+                        <div>
+                            <p class="text-[#00303C] text-base font-medium">Task Assigned </p>
+                            <h3 class="text-[#00303C] font-bold text-3xl">00</h3>
+                        </div>
+                     </div>
+                     <!-- Discover Section -->
+                     <button class="flex items-center gap-2 p-3 bg-[#F4F7FF] rounded-lg h-32 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
+                        <img class="p-5 rounded-full " src="./assets/board.png" alt="">
+                        <div>
+                            <p class="text-[#ffffff] text-2xl font-medium pr-16">Discover Something <br>New Today!</p>
+                        </div>
+                     </button>
+
+                     <!-- Date Section -->
+                     <div class="flex items-center gap-6 p-3 pr-16 bg-[#F4F7FF] rounded-lg h-32">
+                        <img class="p-5 rounded-full bg-white" src="./assets/calender.png" alt="">
+                        <div>
+                            <p class="text-[#00303C] text-base font-medium">Wed, <br> <b>Jul 28 2025 </b></p>
+                        </div>
+                     </div>
+
+                    </div>
+
+                     <!-- Card-Section -->
+
+                     <div class="bg-white grid grid-cols-3 gap-9 p-4">
+                        <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                            <p class="text-base px-2 py-4 rounded-lg bg-white mb-4">ShopEase</p>
+                            <h3 class="text-2xl font-medium">Fix Mobile Button Issue </h3>
+                            <p class="text-ellipsis overflow-hidden text-base p-4 bg-white mb-7">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</span></p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-[#00303C]">Deadline</p>
+                                    <h4 class="text-base font-medium text-[#00303C]">21 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button  class="btn bg-[#3752FD] hover:text-black text-white text-base font-medium">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                            <p class="text-base px-2 py-4 rounded-lg bg-white mb-4">ShopEase</p>
+                            <h3 class="text-2xl font-medium">Fix Mobile Button Issue </h3>
+                            <p class="text-ellipsis overflow-hidden text-base p-4 bg-white mb-7">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-[#00303C]">Deadline</p>
+                                    <h4 class="text-base font-medium text-[#00303C]">21 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button  class="btn bg-[#3752FD] hover:text-black text-white text-base font-medium">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                            <p class="text-base px-2 py-4 rounded-lg bg-white mb-4">ShopEase</p>
+                            <h3 class="text-2xl font-medium">Fix Mobile Button Issue </h3>
+                            <p class="text-ellipsis overflow-hidden text-base p-4 bg-white mb-7">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-[#00303C]">Deadline</p>
+                                    <h4 class="text-base font-medium text-[#00303C]">21 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button class="btn bg-[#3752FD] hover:text-black text-white text-base font-medium">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                            <p class="text-base px-2 py-4 rounded-lg bg-white mb-4">ShopEase</p>
+                            <h3 class="text-2xl font-medium">Fix Mobile Button Issue </h3>
+                            <p class="text-ellipsis overflow-hidden text-base p-4 bg-white mb-7">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-[#00303C]">Deadline</p>
+                                    <h4 class="text-base font-medium text-[#00303C]">21 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button class="btn bg-[#3752FD] hover:text-black text-white text-base font-medium">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                            <p class="text-base px-2 py-4 rounded-lg bg-white mb-4">ShopEase</p>
+                            <h3 class="text-2xl font-medium">Fix Mobile Button Issue </h3>
+                            <p class="text-ellipsis overflow-hidden text-base p-4 bg-white mb-7">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-[#00303C]">Deadline</p>
+                                    <h4 class="text-base font-medium text-[#00303C]">21 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button class="btn bg-[#3752FD] hover:text-black text-white text-base font-medium">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                            <p class="text-base px-2 py-4 rounded-lg bg-white mb-4">ShopEase</p>
+                            <h3 class="text-2xl font-medium">Fix Mobile Button Issue </h3>
+                            <p class="text-ellipsis overflow-hidden text-base p-4 bg-white mb-7">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-[#00303C]">Deadline</p>
+                                    <h4 class="text-base font-medium text-[#00303C]">21 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button class="btn bg-[#3752FD] hover:text-black text-white text-base font-medium">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            <div class="p-6 bg-white w-3/12 h-[1055px]">
+                <div >
+                   <div class="flex gap-3 text-xl items-center justify-center mb-4">
+                    <img class="w-6 h-6" src="./assets/activity.png" alt="">
+                    <p class="font-medium">Activity Log</p>
+                   </div>
+                   <div class='text-center'>
+                    <button class="font-medium text-base bg-[#3752FD] rounded-lg px-3 py-4 text-white">Clear History</button>
+                   </div>
+                </div>
+            </div>
+            </section>
+        </main>
+    </section>
 
     <!-- JS CDN Link -->
     <script src="JS/script.js"></script>
