@@ -14,15 +14,17 @@ document.getElementById("random-color").addEventListener("click", function(){
 const date = new Date()
 const formats = {
   weekday: 'short',
-  month: '2-digit',
+  month: 'short',
   day: '2-digit',
   year: 'numeric',
 }
-const dateFormat = date.toLocaleDateString("en-US", formats)
+
+const dateFormat = date.toLocaleDateString("en-US", formats).replace(/, /g , ' ')
+console.log(dateFormat)
 const dateSection = document.getElementById("date-format")
-const p = document.createElement('p')
-p.innerHTML = `<p class="text-[#00303C] text-[19px] font-medium" id="date-format"><b>${dateFormat}</b></p>`
-dateSection.appendChild(p)
+const div = document.createElement('div')
+div.innerHTML = `<p class="text-[#00303C] text-[19px] font-medium" id="date-format"><b>${dateFormat}</b></p>`
+dateSection.appendChild(div)
 
 // GO Blog Site
 function goBlogSite(){
