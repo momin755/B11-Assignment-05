@@ -53,7 +53,6 @@ for (let completedButton of completedButtons) {
     // History Create
     const time = new Date().toLocaleTimeString()
     const cardTitle = event.target.parentNode.parentNode.parentNode.querySelector('h3.card-title').innerText
-    console.log(cardTitle)
     const p = document.createElement("p")
     p.innerHTML = `
     <p class='my-4 p-3 bg-[#F4F7FF] rounded-lg opacity-70 font-semibold text-black text-base'>
