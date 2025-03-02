@@ -20,7 +20,6 @@ const formats = {
 }
 
 const dateFormat = date.toLocaleDateString("en-US", formats).replace(/, /g , ' ')
-console.log(dateFormat)
 const dateSection = document.getElementById("date-format")
 const div = document.createElement('div')
 div.innerHTML = `<p class="text-[#00303C] text-[19px] font-medium" id="date-format"><b>${dateFormat}</b></p>`
